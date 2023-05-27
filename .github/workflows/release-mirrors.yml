@@ -169,4 +169,4 @@ jobs:
       - name: Delete the cache
         run: |
           gh extension install actions/gh-actions-cache
-          gh actions-cache delete --confirm ${{ needs.getFiles.outputs.randomUUID }}
+          gh actions-cache delete --confirm ${{ needs.getFiles.outputs.randomUUID }} --repo ${{ github.repository }}
