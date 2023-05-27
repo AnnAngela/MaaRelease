@@ -17,6 +17,6 @@ jobs:
       with:
         node-version: lts/*
         check-latest: true
-        cache: 'npm'
+        # cache: 'npm'
     - run: nslookup objects.githubusercontent.com
     - run: nslookup github.com
